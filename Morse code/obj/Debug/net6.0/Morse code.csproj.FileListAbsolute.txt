@@ -1,0 +1,15 @@
+C:\Users\bened\source\repos\THS-Programming-Homework\Morse code\bin\Debug\net6.0\Morse code.exe
+C:\Users\bened\source\repos\THS-Programming-Homework\Morse code\bin\Debug\net6.0\Morse code.deps.json
+C:\Users\bened\source\repos\THS-Programming-Homework\Morse code\bin\Debug\net6.0\Morse code.runtimeconfig.json
+C:\Users\bened\source\repos\THS-Programming-Homework\Morse code\bin\Debug\net6.0\Morse code.dll
+C:\Users\bened\source\repos\THS-Programming-Homework\Morse code\bin\Debug\net6.0\Morse code.pdb
+C:\Users\bened\source\repos\THS-Programming-Homework\Morse code\obj\Debug\net6.0\Morse code.csproj.AssemblyReference.cache
+C:\Users\bened\source\repos\THS-Programming-Homework\Morse code\obj\Debug\net6.0\Morse code.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\bened\source\repos\THS-Programming-Homework\Morse code\obj\Debug\net6.0\Morse code.AssemblyInfoInputs.cache
+C:\Users\bened\source\repos\THS-Programming-Homework\Morse code\obj\Debug\net6.0\Morse code.AssemblyInfo.cs
+C:\Users\bened\source\repos\THS-Programming-Homework\Morse code\obj\Debug\net6.0\Morse code.csproj.CoreCompileInputs.cache
+C:\Users\bened\source\repos\THS-Programming-Homework\Morse code\obj\Debug\net6.0\Morse code.dll
+C:\Users\bened\source\repos\THS-Programming-Homework\Morse code\obj\Debug\net6.0\refint\Morse code.dll
+C:\Users\bened\source\repos\THS-Programming-Homework\Morse code\obj\Debug\net6.0\Morse code.pdb
+C:\Users\bened\source\repos\THS-Programming-Homework\Morse code\obj\Debug\net6.0\Morse code.genruntimeconfig.cache
+C:\Users\bened\source\repos\THS-Programming-Homework\Morse code\obj\Debug\net6.0\ref\Morse code.dll
