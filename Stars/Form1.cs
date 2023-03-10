@@ -14,21 +14,18 @@ namespace Stars
         {
             Graphics g = Graphics.FromHwnd(this.Handle);
             Pen pn = new Pen(Color.White, 1);
+            SolidBrush[] col = { new SolidBrush(Color.White), new SolidBrush(Color.WhiteSmoke),
+                new SolidBrush(Color.FloralWhite), new SolidBrush(Color.AliceBlue), new SolidBrush(Color.LightYellow) };
             Random random = new Random();
-            for (int i = 10; i > 0; i--)
+            Point p = new Point();
+            for (int i = 0; i < 500; i++)
             {
-                Point p = new Point();
-                p.X = random.Next(0, 500);
-                p.Y = random.Next(0, 500);
-                Point newP = Point.Empty;
-
-                newP.X = p.X + 1;
-                newP.Y = p.Y + 1;
-
-
-                g.DrawLine(pn, p, newP);
+                p.X = random.Next(0, 900);
+                p.Y = random.Next(0, 900);
+                int offset = random.Next(1, 7);
+                Rectangle rect = new Rectangle(p.X, p.Y, offset, offset);
+                g.FillEllipse(col[random.Next(col.Length)], rect);
             }
-
         }
     }
 }

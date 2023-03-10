@@ -33,7 +33,7 @@
             // 
             // button1
             // 
-            button1.Location = new Point(663, 406);
+            button1.Location = new Point(358, 12);
             button1.Name = "button1";
             button1.Size = new Size(125, 32);
             button1.TabIndex = 0;
@@ -46,11 +46,13 @@
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Black;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(884, 861);
             Controls.Add(button1);
-            Cursor = Cursors.Arrow;
+            MaximumSize = new Size(900, 900);
+            MinimumSize = new Size(900, 900);
             Name = "Frm";
-            Text = "Form1";
+            StartPosition = FormStartPosition.CenterScreen;
+            Text = "Star generator";
             ResumeLayout(false);
         }
 
