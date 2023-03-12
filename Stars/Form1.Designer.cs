@@ -29,17 +29,74 @@
         private void InitializeComponent()
         {
             button1 = new Button();
+            checkBox1 = new CheckBox();
+            button2 = new Button();
+            progressBar1 = new ProgressBar();
+            label1 = new Label();
+            textBox1 = new TextBox();
             SuspendLayout();
             // 
             // button1
             // 
-            button1.Location = new Point(358, 12);
+            button1.Location = new Point(12, 12);
             button1.Name = "button1";
-            button1.Size = new Size(125, 32);
+            button1.Size = new Size(100, 30);
             button1.TabIndex = 0;
             button1.Text = "Generate stars";
             button1.UseVisualStyleBackColor = true;
             button1.Click += button1_Click;
+            // 
+            // checkBox1
+            // 
+            checkBox1.AutoSize = true;
+            checkBox1.ForeColor = SystemColors.Control;
+            checkBox1.Location = new Point(12, 42);
+            checkBox1.Name = "checkBox1";
+            checkBox1.Size = new Size(99, 19);
+            checkBox1.TabIndex = 1;
+            checkBox1.Text = "Image texture";
+            checkBox1.UseVisualStyleBackColor = true;
+            checkBox1.CheckedChanged += checkBox1_CheckedChanged;
+            // 
+            // button2
+            // 
+            button2.Location = new Point(12, 67);
+            button2.Name = "button2";
+            button2.Size = new Size(75, 23);
+            button2.TabIndex = 2;
+            button2.Text = "Clear";
+            button2.UseVisualStyleBackColor = true;
+            button2.Click += button2_Click;
+            // 
+            // progressBar1
+            // 
+            progressBar1.Location = new Point(11, 125);
+            progressBar1.MarqueeAnimationSpeed = 1;
+            progressBar1.Maximum = 500;
+            progressBar1.Name = "progressBar1";
+            progressBar1.Size = new Size(169, 23);
+            progressBar1.Step = 1;
+            progressBar1.Style = ProgressBarStyle.Continuous;
+            progressBar1.TabIndex = 3;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.ForeColor = SystemColors.Control;
+            label1.Location = new Point(117, 43);
+            label1.Name = "label1";
+            label1.Size = new Size(104, 15);
+            label1.TabIndex = 4;
+            label1.Text = "(High RAM usage)";
+            // 
+            // textBox1
+            // 
+            textBox1.Location = new Point(11, 96);
+            textBox1.Name = "textBox1";
+            textBox1.PlaceholderText = "N of stars";
+            textBox1.Size = new Size(100, 23);
+            textBox1.TabIndex = 5;
+            textBox1.TextChanged += textBox1_TextChanged;
             // 
             // Frm
             // 
@@ -47,17 +104,26 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Black;
             ClientSize = new Size(884, 861);
+            Controls.Add(textBox1);
+            Controls.Add(label1);
+            Controls.Add(progressBar1);
+            Controls.Add(button2);
+            Controls.Add(checkBox1);
             Controls.Add(button1);
-            MaximumSize = new Size(900, 900);
-            MinimumSize = new Size(900, 900);
             Name = "Frm";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Star generator";
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
 
         private Button button1;
+        private CheckBox checkBox1;
+        private Button button2;
+        private ProgressBar progressBar1;
+        private Label label1;
+        private TextBox textBox1;
     }
 }

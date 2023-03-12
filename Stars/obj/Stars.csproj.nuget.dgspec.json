@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\bened\\source\\repos\\THS-Programming-Homework\\Stars\\Stars.csproj": {}
+    "C:\\Users\\bened\\Documents\\Programming-Homework\\Stars\\Stars.csproj": {}
   },
   "projects": {
-    "C:\\Users\\bened\\source\\repos\\THS-Programming-Homework\\Stars\\Stars.csproj": {
+    "C:\\Users\\bened\\Documents\\Programming-Homework\\Stars\\Stars.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\bened\\source\\repos\\THS-Programming-Homework\\Stars\\Stars.csproj",
+        "projectUniqueName": "C:\\Users\\bened\\Documents\\Programming-Homework\\Stars\\Stars.csproj",
         "projectName": "Stars",
-        "projectPath": "C:\\Users\\bened\\source\\repos\\THS-Programming-Homework\\Stars\\Stars.csproj",
+        "projectPath": "C:\\Users\\bened\\Documents\\Programming-Homework\\Stars\\Stars.csproj",
         "packagesPath": "C:\\Users\\bened\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\bened\\source\\repos\\THS-Programming-Homework\\Stars\\obj\\",
+        "outputPath": "C:\\Users\\bened\\Documents\\Programming-Homework\\Stars\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
