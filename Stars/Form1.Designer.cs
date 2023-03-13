@@ -34,6 +34,7 @@
             progressBar1 = new ProgressBar();
             label1 = new Label();
             textBox1 = new TextBox();
+            label2 = new Label();
             SuspendLayout();
             // 
             // button1
@@ -98,12 +99,25 @@
             textBox1.TabIndex = 5;
             textBox1.TextChanged += textBox1_TextChanged;
             // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.BackColor = Color.White;
+            label2.ForeColor = Color.Red;
+            label2.Location = new Point(118, 20);
+            label2.Name = "label2";
+            label2.Size = new Size(358, 15);
+            label2.TabIndex = 6;
+            label2.Text = "High number of stars drawn detected, Memory usage may be high";
+            label2.Visible = false;
+            // 
             // Frm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Black;
             ClientSize = new Size(884, 861);
+            Controls.Add(label2);
             Controls.Add(textBox1);
             Controls.Add(label1);
             Controls.Add(progressBar1);
@@ -125,5 +139,6 @@
         private ProgressBar progressBar1;
         private Label label1;
         private TextBox textBox1;
+        private Label label2;
     }
 }

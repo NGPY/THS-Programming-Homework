@@ -20,11 +20,15 @@ namespace Stars
         {
             Graphics g = Graphics.FromHwnd(this.Handle);
             progressBar1.Maximum = n;
+            if (n > 500)
+            {
+                label2.Visible = true;
+            }
             for (int i = n; i > 0; i--)
             {
                 p.X = random.Next(0, this.Width);
                 p.Y = random.Next(0, this.Height);
-                int offset = random.Next(1, 50);
+                int offset = random.Next(1, 7);
                 Rectangle rect = new Rectangle(p.X, p.Y, offset, offset);
                 if (ImageTexture)
                 {
@@ -58,6 +62,7 @@ namespace Stars
             Graphics g = Graphics.FromHwnd(this.Handle);
             g.Clear(Color.Black);
             g.Dispose();
+            label2.Visible = false;
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
@@ -66,7 +71,7 @@ namespace Stars
             {
                 n = Convert.ToInt16(textBox1.Text);
             }
-            catch 
+            catch
             {
                 textBox1.Text = string.Empty;
             }
