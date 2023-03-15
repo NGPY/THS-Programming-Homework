@@ -98,7 +98,7 @@ namespace Stars
             control.EndInit();
             control.ResetMedia();
 
-            string final = "C:\\Users\\bened\\Documents\\Programming-Homework\\Stars\\bin\\Debug\\net6.0-windows\\videoplayback.mp4";
+            string final = currentDirectory + "\\videoplayback.mp4";
             control.Play(new Uri(final).AbsoluteUri);
             
         }

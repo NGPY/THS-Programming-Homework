@@ -1,4 +1,5 @@
-﻿using Vlc.DotNet.Forms;
+﻿using System.Reflection;
+using Vlc.DotNet.Forms;
 
 namespace Stars
 {
@@ -125,7 +126,9 @@ namespace Stars
             vlcControl2.TabIndex = 7;
             vlcControl2.Text = "vlcControl2";
             vlcControl2.VlcMediaplayerOptions = null;
-            vlcControl2.VlcLibDirectory = new DirectoryInfo("C:\\Users\\bened\\Documents\\Programming-Homework\\Stars\\bin\\Debug\\net6.0-windows\\Vlc.DotNet.Forms.dll");
+            var currentAssembly = Assembly.GetEntryAssembly();
+            var currentDirectory = new FileInfo(currentAssembly.Location).DirectoryName;
+            vlcControl2.VlcLibDirectory = new DirectoryInfo(currentDirectory + "\\Vlc.DotNet.Forms.dll");
             vlcControl2.DoubleClick += vlcControl2_DoubleClick;
             // 
             // Frm
