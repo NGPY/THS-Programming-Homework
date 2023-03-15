@@ -1,8 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "EW+MublijaNH15PJnzAokPypTw6GXg4E2UgSoSX41sdTZfCQzFBiNSF+K83b0a8FdMbdOG/ViUgX/C/YCsm46A==",
+  "dgSpecHash": "9qAaDkOcAK7JNcyRk0iHJ4xSNU9iWjYJ18Vn4azioMY9rBjFypmuBIAjGo1RXqj9v3MRXiOOo0QWm4mw+hUZWg==",
   "success": true,
   "projectFilePath": "C:\\Users\\bened\\Documents\\Programming-Homework\\Stars\\Stars.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\bened\\.nuget\\packages\\videolan.libvlc.windows\\3.0.18\\videolan.libvlc.windows.3.0.18.nupkg.sha512",
+    "C:\\Users\\bened\\.nuget\\packages\\vlc.dotnet.core\\3.1.0\\vlc.dotnet.core.3.1.0.nupkg.sha512",
+    "C:\\Users\\bened\\.nuget\\packages\\vlc.dotnet.core.interops\\3.1.0\\vlc.dotnet.core.interops.3.1.0.nupkg.sha512",
+    "C:\\Users\\bened\\.nuget\\packages\\vlc.dotnet.forms\\3.1.0\\vlc.dotnet.forms.3.1.0.nupkg.sha512"
+  ],
   "logs": []
 }

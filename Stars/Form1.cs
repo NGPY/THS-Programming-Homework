@@ -1,3 +1,6 @@
+using System.Reflection;
+using Vlc.DotNet.Forms;
+
 namespace Stars
 {
     public partial class Frm : Form
@@ -15,6 +18,7 @@ namespace Stars
         public Frm()
         {
             InitializeComponent();
+
         }
         private void button1_Click(object sender, EventArgs e)
         {
@@ -56,13 +60,15 @@ namespace Stars
                 ImageTexture = false;
             }
         }
-
         private void button2_Click(object sender, EventArgs e)
         {
             Graphics g = Graphics.FromHwnd(this.Handle);
             g.Clear(Color.Black);
             g.Dispose();
             label2.Visible = false;
+            
+
+
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
@@ -75,6 +81,26 @@ namespace Stars
             {
                 textBox1.Text = string.Empty;
             }
+        }
+
+        private void vlcControl2_DoubleClick(object sender, EventArgs e)
+        {
+            var control = vlcControl2;
+            var currentAssembly = Assembly.GetEntryAssembly();
+            var currentDirectory = new FileInfo(currentAssembly.Location).DirectoryName;
+            // Default installation path of VideoLAN.LibVLC.Windows
+            var libDirectory = new DirectoryInfo(Path.Combine(currentDirectory, "libvlc", IntPtr.Size == 4 ? "win-x86" : "win-x64"));
+            control.BeginInit();
+            control.BackColor = Color.White;
+            control.VlcLibDirectory = libDirectory;
+            control.SetBounds(20, 20, 500, 500);
+            control.Show();
+            control.EndInit();
+            control.ResetMedia();
+
+            string final = "C:\\Users\\bened\\Documents\\Programming-Homework\\Stars\\bin\\Debug\\net6.0-windows\\videoplayback.mp4";
+            control.Play(new Uri(final).AbsoluteUri);
+            
         }
     }
 }

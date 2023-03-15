@@ -1,4 +1,6 @@
-﻿namespace Stars
+﻿using Vlc.DotNet.Forms;
+
+namespace Stars
 {
     partial class Frm
     {
@@ -35,6 +37,8 @@
             label1 = new Label();
             textBox1 = new TextBox();
             label2 = new Label();
+            vlcControl2 = new VlcControl();
+            ((System.ComponentModel.ISupportInitialize)vlcControl2).BeginInit();
             SuspendLayout();
             // 
             // button1
@@ -111,12 +115,26 @@
             label2.Text = "High number of stars drawn detected, Memory usage may be high";
             label2.Visible = false;
             // 
+            // vlcControl2
+            // 
+            vlcControl2.BackColor = Color.Black;
+            vlcControl2.Location = new Point(396, 357);
+            vlcControl2.Name = "vlcControl2";
+            vlcControl2.Size = new Size(487, 505);
+            vlcControl2.Spu = -1;
+            vlcControl2.TabIndex = 7;
+            vlcControl2.Text = "vlcControl2";
+            vlcControl2.VlcMediaplayerOptions = null;
+            vlcControl2.VlcLibDirectory = new DirectoryInfo("C:\\Users\\bened\\Documents\\Programming-Homework\\Stars\\bin\\Debug\\net6.0-windows\\Vlc.DotNet.Forms.dll");
+            vlcControl2.DoubleClick += vlcControl2_DoubleClick;
+            // 
             // Frm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Black;
             ClientSize = new Size(884, 861);
+            Controls.Add(vlcControl2);
             Controls.Add(label2);
             Controls.Add(textBox1);
             Controls.Add(label1);
@@ -140,5 +158,7 @@
         private Label label1;
         private TextBox textBox1;
         private Label label2;
+        private Vlc.DotNet.Forms.VlcControl vlcControl1;
+        private VlcControl vlcControl2;
     }
 }
